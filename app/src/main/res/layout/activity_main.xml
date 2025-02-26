@@ -25,47 +25,22 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="16dp"
             android:src="@drawable/logo" />
-
-        <ImageView
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:layout_marginBottom="8dp"
-            android:src="@drawable/gerencia" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AREA DE GERENCIA"
-            android:textSize="10sp"
-            android:textColor="@android:color/white"
-            android:padding="8dp"
-            android:layout_marginBottom="15dp"/>
-        <ImageView
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:layout_marginBottom="8dp"
-            android:src="@drawable/tecnologia" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AREA DE TECNOLOGIA"
-            android:textSize="10sp"
-            android:textColor="@android:color/white"
-            android:padding="8dp"
-            android:layout_marginBottom="15dp"/>
-        <ImageView
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:src="@drawable/marketing"
-            android:layout_marginBottom="8dp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AREA DE MARKETING"
-            android:textSize="10sp"
-            android:textColor="@android:color/white"
-            android:padding="8dp"
-            android:layout_marginBottom="15dp"/>
-
-
+        <!-- Contenedor de los Fragmentos -->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="371dp"
+            android:layout_height="484dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondo"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
+    <!-- Barra de navegación inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/menu_navigation"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

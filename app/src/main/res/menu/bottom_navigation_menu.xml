@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_gerencia"
+        android:icon="@drawable/gerencia"
+        android:title="Gerencia" />
+
+    <item
+        android:id="@+id/nav_marketing"
+        android:icon="@drawable/marketing"
+        android:title="Marketing" />
+
+    <item
+        android:id="@+id/nav_ti"
+        android:icon="@drawable/tecnologia"
+        android:title="TI" />
+</menu>
